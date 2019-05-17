@@ -1,0 +1,63 @@
+<layout>
+    <data>
+        <variable
+            name="idv"
+            type="int" />
+        <variable
+            name="desc"
+            type="String" />
+        <variable
+            name="priority"
+            type="int" />
+    </data>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:text="@{idv.toString()}"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/id"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/description"
+        android:text="@{desc}"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="@{priority.toString()}"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="5dp" />
+
+
+
+
+</LinearLayout>
+</layout>
